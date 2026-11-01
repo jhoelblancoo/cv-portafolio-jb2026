@@ -1,54 +1,63 @@
 ---
-description: Portfolio agent handoff — GitHub→Netlify, noindex, brand/CV constraints
+description: Portfolio agent handoff — GitHub→Netlify, noindex, brand/CV, git/version
 alwaysApply: true
 ---
 
 # Portfolio handoff (always on)
 
-Full guide: `.cursor/HANDOFF.md`
+Guía completa: `.cursor/HANDOFF.md`  
+Mapa de capas: `.cursor/rules/portfolio-architecture.mdc`
 
 ## Remotes / deploy
 
-- **Live site:** https://jhoelblanco.netlify.app/es/
-- **Source of truth:** GitHub `jhoelblancoo/cv-portafolio-jb2026` → Netlify auto-deploy from **`main`**
-- **Local clone:** `C:\Users\jblanco\Documents\Info\CV` (repo root = this Angular app; base directory empty on Netlify)
-- Do **not** treat Cursor Origin monorepo as the live site remote. Do **not** deploy from an agent Netlify account.
-- Before work: `git pull` on `main`. After changes: commit → push GitHub `main` → confirm Netlify.
+- **Live:** https://jhoelblanco.netlify.app/es/
+- **Fuente:** GitHub `jhoelblancoo/cv-portafolio-jb2026` → Netlify auto-deploy desde **`main`**
+- **Clone:** raíz = app Angular (base directory vacío en Netlify)
+- No tratar Origin monorepo como remote del site live. No desplegar desde cuenta Netlify del agente.
+- Antes de trabajar: `git pull` en `main`.
+
+## Git / versión (excepción de este repo personal)
+
+- Aquí **sí** se puede: bump patch + entrada en `change.log.md` + **commit y push** a `main` cuando el usuario lo pida o al cerrar un lote de cambios (Netlify despliega solo).
+- Versionado: skill `version-changelog` → `package.json` (patch) + entrada arriba en `change.log.md` (autor `Jblanco`).
+- Conventional commits (`feat:`, `fix:`, `chore:`, `docs:`).
+- Comentarios en código: regla global `code-comments-format` (español).
 
 ## Commands
 
-- `npm start` — production build + static ES+EN on port **4317** (locale switch works)
-- `npm run start:dev` — `ng serve` HMR, **one locale only** (EN switch won’t change language)
-- `npm run build` — ES+EN prerender + `scripts/seo-root.mjs` (robots, sitemap, GSC file, og-share, root icons)
-- Publish dir: `dist/portfolio/browser`
+- `npm start` — build prod + estático ES+EN puerto **4317** (switch idioma OK)
+- `npm run start:dev` — `ng serve` HMR, **un solo locale**
+- `npm run build` — prerender ES+EN + `scripts/seo-root.mjs`
+- Publish: `dist/portfolio/browser`
 
-## SEO (do not reopen Google unless Jhoel says)
+## SEO (no reabrir Google sin que Jhoel lo diga)
 
-- Keep `seo/robots.txt`: Disallow `/` for Google/`*`; Allow GSC verify + `/og-share.jpg`; Allow facebookexternalhit / LinkedInBot / WhatsApp / Twitterbot
-- Keep meta `robots` + `googlebot`: `noindex, nofollow`
-- Keep Open Graph working (`/og-share.jpg` 1200×630, absolute OG tags)
-- **Never delete** `google3804d3f31e87917d.html` / `seo/google3804d3f31e87917d.html`
+- `seo/robots.txt`: Disallow `/` para Google/`*`; Allow GSC + `/og-share.jpg`; Allow bots sociales
+- Meta `robots` + `googlebot`: `noindex, nofollow`
+- OG activo (`/og-share.jpg` 1200×630)
+- **Nunca borrar** `google3804d3f31e87917d.html` / copia en `seo/`
 
-## Brand / assets — do not regenerate
+## Brand / assets — no regenerar
 
-- Accent `#003049`. Nav marks: `public/assets/brand/jb-mark-navy-*.png` (light) / `jb-mark-white-*.png` (dark). Source: `jb-source.png`
-- **No** AI wordmarks / alternate kits. If logo changes, start from Jhoel’s transparent original PNG only
-- CV PDFs: `public/assets/cv/Jhoel_Blanco_CV_{ES,EN}_L.pdf` — replace only if Jhoel asks
-- Photos: `public/assets/photos/`
-- Captures done: `public/assets/projects/pasarela/` — **pending:** BDT, Onboarding, PagoChinchin, Business, Botly (± BDV, INTT)
+- Acento `#003049`. Marks: `public/assets/brand/jb-mark-navy-*.png` / `jb-mark-white-*.png`. Source: `jb-source.png`
+- Sin wordmarks IA. Logo: solo PNG original transparente de Jhoel
+- CV: `public/assets/cv/Jhoel_Blanco_CV_{ES,EN}_L.pdf` — solo si pide
+- Fotos: `public/assets/photos/`
+- Capturas OK: `pasarela/` — **pendiente:** BDT, Onboarding, PagoChinchin, Business, Botly (± BDV, INTT)
 
-## Product
+## Producto
 
-- Title tone: **Frontend Engineer** (not Tech Lead)
-- Contact = email / WhatsApp / LinkedIn / GitHub links only (no forms unless asked)
-- Metrics: reuse CV numbers only; don’t invent %
+- Tono título: **Frontend Engineer** (no Tech Lead)
+- Contacto = solo links (sin form salvo que pida)
+- Métricas: solo números del CV; no inventar %
 
-## Paths quick map
+## Paths rápidos
 
-| Path | Role |
-|------|------|
-| `src/app/pages/*` | Home, about, contact, project-detail |
-| `src/app/data/projects.ts` | Project copy, covers, galleries, links |
+| Path | Rol |
+|------|-----|
+| `src/app/pages/*` | Vistas |
+| `src/app/data/projects.ts` | Copy / covers / galleries / links |
 | `src/app/shared/seo/seo.service.ts` | Titles, OG, noindex |
-| `seo/robots.txt` + `scripts/seo-root.mjs` | Site-root SEO files after build |
-| `netlify.toml` | Build/publish/redirects/headers |
+| `seo/` + `scripts/seo-root.mjs` | SEO en root post-build |
+| `netlify.toml` | Build / redirects / headers |
+| `change.log.md` | Historial de versiones |

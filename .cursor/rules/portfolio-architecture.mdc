@@ -1,0 +1,42 @@
+---
+description: Mapa de arquitectura portfolio (capas / módulos)
+alwaysApply: true
+---
+
+# portfolio — mapa del front
+
+Angular 22 standalone + localize ES/EN + prerender/SSG → Netlify. Dominio: portafolio personal (casos, about, contacto, CV).
+
+## Capas
+
+- `src/app/pages/` — rutas de pantalla (home, about, contact, project-detail). Una carpeta por vista; no meter datos globales aquí.
+- `src/app/layout/` — shell (nav/header), footer. Layout compartido de todas las rutas hijas.
+- `src/app/data/` — catálogo estático (`projects.ts`). Copy, slugs, covers, galleries, links. No lógica de UI.
+- `src/app/core/` — servicios de app (tema, etc.). Sin componentes de presentación.
+- `src/app/shared/` — UI/servicios reutilizables (theme-toggle, SEO). Antes de crear otro shared, mirar aquí.
+- `src/locale/` — XLF i18n (`messages.en.xlf`). Strings de UI vía `$localize` / extract.
+- `public/assets/` — brand, photos, cv PDFs, capturas por proyecto. No regenerar brand/CV sin pedirlo.
+- `seo/` + `scripts/seo-root.mjs` — robots, sitemap, GSC, OG; se copian al root del publish en build.
+- `netlify.toml` — build, publish, redirects locales, headers.
+
+## Features / páginas
+
+- `home` — hero + featured (lee `PROJECTS`).
+- `project-detail` — caso por `slug` desde `projects.ts`.
+- `about` — posicionamiento + educación + fotos.
+- `contact` — solo links (email / WhatsApp / LinkedIn / GitHub).
+
+## Reuso / convenciones
+
+- Nuevo proyecto o métrica → `src/app/data/projects.ts` (+ assets en `public/assets/projects/<slug>/`).
+- SEO de página → `shared/seo/seo.service.ts` (respetar noindex hasta aviso).
+- Estilos: SCSS del componente; acento `#003049`; tipografía Fraunces (display) / Sora (body).
+- Comentarios en código: regla global `code-comments-format` (español, ritmo paso a paso).
+- i18n: tras strings nuevas → `npm run i18n:extract` y completar EN.
+
+## Docs canónicas
+
+- `.cursor/HANDOFF.md` — deploy, SEO, brand, pendientes, preferencias
+- `.cursor/rules/portfolio-handoff.mdc` — constraints always-on
+- `README.md` — comandos locales / estructura Slice 1
+- `change.log.md` — historial de versiones

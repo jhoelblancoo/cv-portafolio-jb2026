@@ -7,7 +7,8 @@
 
 Este documento es la guía operativa para agentes que trabajen en el clone local. No reinventar stack ni flujo.
 
-> Reglas cortas siempre-on: [`.cursor/rules/portfolio-handoff.mdc`](./rules/portfolio-handoff.mdc)
+> Reglas always-on: [`.cursor/rules/portfolio-handoff.mdc`](./rules/portfolio-handoff.mdc) · mapa: [`.cursor/rules/portfolio-architecture.mdc`](./rules/portfolio-architecture.mdc)  
+> Versión: `package.json` + [`change.log.md`](../change.log.md)
 
 ---
 
@@ -178,14 +179,15 @@ Cerrado / no tocar sin pedirlo: logo (OK), PDFs CV (OK), Search Console verify f
 
 ## 9. Checklist para el agente local
 
-1. Abrir `C:\Users\jblanco\Documents\Info\CV` (no el home de Windows; nunca `git init` en `C:\Users\jblanco`)
-2. Branch `main`, remote = GitHub
+1. Abrir el clone del repo (raíz = app Angular). Nunca `git init` en `C:\Users\jblanco`
+2. Branch `main`, remote = GitHub `jhoelblancoo/cv-portafolio-jb2026`
 3. `git pull` antes de trabajar
-4. Cambios pequeños y enfocados; conventional commits (`feat:`, `fix:`, …)
-5. Probar con `npm start` si toca i18n/rutas
-6. Push → verificar Netlify deploy
-7. No reabrir Google indexación sin confirmación explícita de Jhoel
-8. No borrar `google3804d3f31e87917d.html` ni romper OG (`og-share.jpg`)
+4. Leer mapa: `.cursor/rules/portfolio-architecture.mdc`. Comentarios: `code-comments-format` (ES)
+5. Cambios pequeños; al cerrar lote (o si pide): **versión patch** + entrada en `change.log.md` + **commit + push** a `main` (excepción de este repo personal; Netlify auto-deploy)
+6. Conventional commits (`feat:`, `fix:`, `chore:`, `docs:`)
+7. Probar con `npm start` si toca i18n/rutas; tras push, verificar Netlify
+8. No reabrir Google indexación sin confirmación explícita de Jhoel
+9. No borrar `google3804d3f31e87917d.html` ni romper OG (`og-share.jpg`)
 
 ---
 
