@@ -34,6 +34,14 @@ mkdirSync(publish, { recursive: true });
 
 copyFileSync(join(root, 'seo/robots.txt'), join(publish, 'robots.txt'));
 
+const gscFile = 'google3804d3f31e87917d.html';
+const gscSrc = join(root, 'seo', gscFile);
+if (existsSync(gscSrc)) {
+  copyFileSync(gscSrc, join(publish, gscFile));
+} else {
+  console.warn(`Missing ${gscFile} in seo/; Search Console verification will 404 at site root.`);
+}
+
 const urls = [];
 for (const locale of ['es', 'en']) {
   for (const path of PATHS) {
@@ -49,4 +57,8 @@ ${urls.join('\n')}
 `;
 
 writeFileSync(join(publish, 'sitemap.xml'), sitemap, 'utf8');
-console.log(`SEO root written: robots.txt + sitemap.xml (${urls.length} URLs) → ${publish}`);
+console.log(
+  `SEO root written: robots.txt + sitemap.xml (${urls.length} URLs)` +
+    (existsSync(gscSrc) ? ` + ${gscFile}` : '') +
+    ` → ${publish}`,
+);

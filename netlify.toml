@@ -52,3 +52,9 @@
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
     Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/google3804d3f31e87917d.html"
+  [headers.values]
+    Content-Type = "text/html; charset=utf-8"
+    Cache-Control = "public, max-age=300"
