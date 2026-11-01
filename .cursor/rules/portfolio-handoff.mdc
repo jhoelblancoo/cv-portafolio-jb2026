@@ -19,7 +19,7 @@ Mapa de capas: `.cursor/rules/portfolio-architecture.mdc`
 ## Git / versión (excepción de este repo personal)
 
 - Aquí **sí** se puede: bump patch + entrada en `change.log.md` + **commit y push** a `main` cuando el usuario lo pida o al cerrar un lote de cambios (Netlify despliega solo).
-- Versionado: skill `version-changelog` → `package.json` (patch) + entrada arriba en `change.log.md` (autor `Jblanco`).
+- Versionado: skill `version-changelog` → patch en `package.json` + `src/app/core/app-version.ts` + entrada arriba en `change.log.md` (autor `Jblanco`). El footer muestra `v{{APP_VERSION}}`.
 - Conventional commits (`feat:`, `fix:`, `chore:`, `docs:`).
 - Comentarios en código: regla global `code-comments-format` (español).
 

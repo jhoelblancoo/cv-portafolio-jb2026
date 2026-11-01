@@ -1,10 +1,25 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
+    <!-- Marca: logo + nombre -->
     <div class="site-footer__brand">
-      <p class="site-footer__name">Jhoel Blanco</p>
-      <p class="site-footer__role" i18n="@@footer.role">Frontend Engineer</p>
+      <a routerLink="/" class="site-footer__logo-link" aria-label="Jhoel Blanco — inicio">
+        <img
+          class="site-footer__logo"
+          [src]="brandMarkSrc()"
+          width="48"
+          height="48"
+          alt=""
+          decoding="async"
+        />
+      </a>
+
+      <div class="site-footer__identity">
+        <p class="site-footer__name">Jhoel Blanco</p>
+        <p class="site-footer__role" i18n="@@footer.role">Frontend Engineer</p>
+      </div>
     </div>
 
+    <!-- Descargas CV -->
     <div class="site-footer__cv">
       <p class="site-footer__label">{{ cvLabel }}</p>
       <div class="site-footer__cv-links">
@@ -13,6 +28,7 @@
       </div>
     </div>
 
+    <!-- Nav + redes -->
     <nav class="site-footer__nav" aria-label="Footer">
       <a routerLink="/sobre-mi">{{ about }}</a>
       <a routerLink="/contacto">{{ contact }}</a>
@@ -24,5 +40,10 @@
       <a href="https://github.com/jhoelblancoo" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   </div>
-  <p class="site-footer__copy">© {{ year }} Jhoel Blanco</p>
+
+  <!-- Copyright + versión de deploy -->
+  <p class="site-footer__copy">
+    <span>© {{ year }} Jhoel Blanco</span>
+    <span class="site-footer__version">v{{ version }}</span>
+  </p>
 </footer>

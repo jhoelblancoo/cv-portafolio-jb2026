@@ -12,7 +12,7 @@ Angular 22 standalone + localize ES/EN + prerender/SSG → Netlify. Dominio: por
 - `src/app/pages/` — rutas de pantalla (home, about, contact, project-detail). Una carpeta por vista; no meter datos globales aquí.
 - `src/app/layout/` — shell (nav/header), footer. Layout compartido de todas las rutas hijas.
 - `src/app/data/` — catálogo estático (`projects.ts`). Copy, slugs, covers, galleries, links. No lógica de UI.
-- `src/app/core/` — servicios de app (tema, etc.). Sin componentes de presentación.
+- `src/app/core/` — servicios de app (tema, etc.) + `app-version.ts` (versión UI = `package.json`). Sin componentes de presentación.
 - `src/app/shared/` — UI/servicios reutilizables (theme-toggle, SEO). Antes de crear otro shared, mirar aquí.
 - `src/locale/` — XLF i18n (`messages.en.xlf`). Strings de UI vía `$localize` / extract.
 - `public/assets/` — brand, photos, cv PDFs, capturas por proyecto. No regenerar brand/CV sin pedirlo.

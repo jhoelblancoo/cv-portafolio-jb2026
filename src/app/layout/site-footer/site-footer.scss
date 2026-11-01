@@ -12,6 +12,30 @@
   gap: 1.75rem;
 }
 
+.site-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.site-footer__logo-link {
+  display: inline-flex;
+  flex-shrink: 0;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.site-footer__logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.site-footer__identity {
+  min-width: 0;
+}
+
 .site-footer__name {
   font-family: var(--font-display);
   font-size: 1.35rem;
@@ -93,6 +117,18 @@
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.82rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+}
+
+.site-footer__version {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+  font-variant-numeric: tabular-nums;
 }
 
 @media (min-width: 840px) {

@@ -1,5 +1,12 @@
 # portfolio — changelog
 
+## [0.0.2] - 2026-11-01 - Jblanco
+
+### ADD
+
+- Logo JB en footer (tema light/dark) + span `v0.0.2` para verificar deploy
+- Constante `src/app/core/app-version.ts` (espejo de `package.json` en UI)
+
 ## [0.0.1] - 2026-11-01 - Jblanco
 
 ### ADD
