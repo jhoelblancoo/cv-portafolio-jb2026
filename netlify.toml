@@ -29,6 +29,7 @@
   status = 301
 
 # SPA fallback within each locale (prerender covers Slice 1 routes; keep for client nav)
+# Static files that exist (assets, prerendered HTML) take precedence over these.
 [[redirects]]
   from = "/es/*"
   to = "/es/index.html"
@@ -38,3 +39,16 @@
   from = "/en/*"
   to = "/en/index.html"
   status = 200
+
+# Site-root SEO files are written by scripts/seo-root.mjs after build.
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"

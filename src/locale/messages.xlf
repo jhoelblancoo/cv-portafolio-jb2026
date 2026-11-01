@@ -784,6 +784,63 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="seo.home.title" datatype="html">
+        <source>Jhoel Blanco — Frontend Engineer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/index.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/seo/seo.service.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.home.description" datatype="html">
+        <source>Portafolio de Jhoel Blanco — Frontend Engineer (Angular &amp; Flutter). Productos de pagos, banca y operaciones críticas.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/index.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/seo/seo.service.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.about.title" datatype="html">
+        <source>Sobre mí — Jhoel Blanco</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/seo/seo.service.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.about.description" datatype="html">
+        <source>Sobre Jhoel Blanco: Frontend Engineer con experiencia en Angular, Flutter y productos fintech en Venezuela.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/seo/seo.service.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.contact.title" datatype="html">
+        <source>Contacto — Jhoel Blanco</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/seo/seo.service.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.contact.description" datatype="html">
+        <source>Contacta a Jhoel Blanco por email, WhatsApp, LinkedIn o GitHub.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/seo/seo.service.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.project.titleSuffix" datatype="html">
+        <source>— Jhoel Blanco</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/seo/seo.service.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="theme.toDark" datatype="html">
         <source>Cambiar a tema oscuro</source>
         <context-group purpose="location">

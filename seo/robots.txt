@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jhoelblanco.netlify.app/sitemap.xml
