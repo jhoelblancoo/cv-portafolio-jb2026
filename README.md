@@ -1,21 +1,22 @@
 # Portafolio — Jhoel Blanco
 
-App Angular standalone (CLI) con i18n ES/EN (`@angular/localize`), prerender estático y tema light/dark (acento `#003049`). Slice 1: home, 3 proyectos destacados, sobre mí, contacto (solo links) y placeholders de CV.
+> **Agent / Cursor handoff:** see [`.cursor/HANDOFF.md`](.cursor/HANDOFF.md) (rules: [`.cursor/rules/portfolio-handoff.mdc`](.cursor/rules/portfolio-handoff.mdc)).
+
+App Angular standalone (CLI) con i18n ES/EN (`@angular/localize`), prerender estático y tema light/dark (acento `#003049`). Live: https://jhoelblanco.netlify.app/es/
 
 ## Destino local / GitHub
 
 - **GitHub (solo portafolio):** https://github.com/jhoelblancoo/cv-portafolio-jb2026 — raíz = esta app Angular (sin el pipeline `cv/`).
 - **Monorepo Cursor/Origin:** sigue teniendo `cv/` + `portfolio/` juntos (PDFs, mentor, etc.).
-- **Carpeta Windows prevista:** `C:\Users\jblanco\Documents\Info\CV`
+- **Carpeta Windows:** `C:\Users\jblanco\Documents\Info\CV` — `git pull` aquí antes de trabajar.
 
 ```powershell
 git clone https://github.com/jhoelblancoo/cv-portafolio-jb2026.git "C:\Users\jblanco\Documents\Info\CV"
 cd "C:\Users\jblanco\Documents\Info\CV"
+git pull
 npm install
 npm start
 ```
-
-PDFs del CV (cuando existan): copiar `Jhoel_Blanco_CV_ES_L.pdf` / `EN_L` desde el monorepo `cv/dist/` hacia `public/assets/cv/` de este repo.
 
 ## Requisitos
 
@@ -25,7 +26,6 @@ PDFs del CV (cuando existan): copiar `Jhoel_Blanco_CV_ES_L.pdf` / `EN_L` desde e
 ## Desarrollo local
 
 ```bash
-cd portfolio
 npm install
 npm start
 # = npm run build + sirve dist ES+EN en el puerto 4317
@@ -38,11 +38,10 @@ npm start
 ## Build / prerender
 
 ```bash
-cd portfolio
 npm run build
 ```
 
-Salida estática (SSG): `dist/portfolio/browser/{es,en}/` — apta para Netlify (`netlify.toml` en esta carpeta). Sitio objetivo: `jhoelblanco.netlify.app`.
+Salida estática (SSG): `dist/portfolio/browser/{es,en}/` — apta para Netlify (`netlify.toml`). Sitio: `jhoelblanco.netlify.app`.
 
 Extraer / actualizar strings i18n:
 
@@ -58,20 +57,21 @@ npm run i18n:extract
 | `npm start` | build + static ES+EN en puerto **4317** (idioma OK) |
 | `npm run start:dev` | `ng serve` HMR (un solo locale) |
 | `npm run start:en` | `ng serve` solo EN |
-| `npm run build` | build producción ES+EN + prerender |
+| `npm run build` | build producción ES+EN + prerender + SEO root files |
 | `npm run i18n:extract` | genera `src/locale/messages.xlf` |
 
-## Estructura (Slice 1)
+## Estructura
 
-- `src/app/pages/home` — hero + featured (Pasarela, BDT App, Onboarding)
-- `src/app/pages/about` — posicionamiento + educación
-- `src/app/pages/contact` — email, WhatsApp, LinkedIn
-- `src/app/pages/project-detail` — caso por slug
-- `public/assets/cv/` — placeholders PDF (ver README ahí)
+- `src/app/pages/home` — hero + featured
+- `src/app/pages/about` — posicionamiento + fotos
+- `src/app/pages/contact` — email, WhatsApp, LinkedIn, GitHub
+- `src/app/pages/project-detail` — caso por slug (+ galería si hay capturas)
+- `public/assets/cv/` — PDFs CV ES/EN
+- `public/assets/brand/` — monograma JB
+- `.cursor/HANDOFF.md` — guía operativa para agentes
 
-## Gaps conocidos (no bloquean scaffold)
+## Gaps conocidos
 
-- Foto personal
-- Capturas/logos por proyecto
-- URL pública de GitHub
-- PDFs reales desde `cv/dist/`
+- Capturas/logos del resto de proyectos (Pasarela ya tiene)
+- Reabrir indexación Google **solo** cuando Jhoel lo pida (hoy: noindex + Disallow)
+- Dominio propio (opcional, después)

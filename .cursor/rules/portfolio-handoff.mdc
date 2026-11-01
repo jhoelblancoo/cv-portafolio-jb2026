@@ -1,0 +1,54 @@
+---
+description: Portfolio agent handoff — GitHub→Netlify, noindex, brand/CV constraints
+alwaysApply: true
+---
+
+# Portfolio handoff (always on)
+
+Full guide: `.cursor/HANDOFF.md`
+
+## Remotes / deploy
+
+- **Live site:** https://jhoelblanco.netlify.app/es/
+- **Source of truth:** GitHub `jhoelblancoo/cv-portafolio-jb2026` → Netlify auto-deploy from **`main`**
+- **Local clone:** `C:\Users\jblanco\Documents\Info\CV` (repo root = this Angular app; base directory empty on Netlify)
+- Do **not** treat Cursor Origin monorepo as the live site remote. Do **not** deploy from an agent Netlify account.
+- Before work: `git pull` on `main`. After changes: commit → push GitHub `main` → confirm Netlify.
+
+## Commands
+
+- `npm start` — production build + static ES+EN on port **4317** (locale switch works)
+- `npm run start:dev` — `ng serve` HMR, **one locale only** (EN switch won’t change language)
+- `npm run build` — ES+EN prerender + `scripts/seo-root.mjs` (robots, sitemap, GSC file, og-share, root icons)
+- Publish dir: `dist/portfolio/browser`
+
+## SEO (do not reopen Google unless Jhoel says)
+
+- Keep `seo/robots.txt`: Disallow `/` for Google/`*`; Allow GSC verify + `/og-share.jpg`; Allow facebookexternalhit / LinkedInBot / WhatsApp / Twitterbot
+- Keep meta `robots` + `googlebot`: `noindex, nofollow`
+- Keep Open Graph working (`/og-share.jpg` 1200×630, absolute OG tags)
+- **Never delete** `google3804d3f31e87917d.html` / `seo/google3804d3f31e87917d.html`
+
+## Brand / assets — do not regenerate
+
+- Accent `#003049`. Nav marks: `public/assets/brand/jb-mark-navy-*.png` (light) / `jb-mark-white-*.png` (dark). Source: `jb-source.png`
+- **No** AI wordmarks / alternate kits. If logo changes, start from Jhoel’s transparent original PNG only
+- CV PDFs: `public/assets/cv/Jhoel_Blanco_CV_{ES,EN}_L.pdf` — replace only if Jhoel asks
+- Photos: `public/assets/photos/`
+- Captures done: `public/assets/projects/pasarela/` — **pending:** BDT, Onboarding, PagoChinchin, Business, Botly (± BDV, INTT)
+
+## Product
+
+- Title tone: **Frontend Engineer** (not Tech Lead)
+- Contact = email / WhatsApp / LinkedIn / GitHub links only (no forms unless asked)
+- Metrics: reuse CV numbers only; don’t invent %
+
+## Paths quick map
+
+| Path | Role |
+|------|------|
+| `src/app/pages/*` | Home, about, contact, project-detail |
+| `src/app/data/projects.ts` | Project copy, covers, galleries, links |
+| `src/app/shared/seo/seo.service.ts` | Titles, OG, noindex |
+| `seo/robots.txt` + `scripts/seo-root.mjs` | Site-root SEO files after build |
+| `netlify.toml` | Build/publish/redirects/headers |
