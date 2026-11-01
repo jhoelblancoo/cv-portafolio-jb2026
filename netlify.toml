@@ -58,3 +58,9 @@
   [headers.values]
     Content-Type = "text/html; charset=utf-8"
     Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/og-share.jpg"
+  [headers.values]
+    Content-Type = "image/jpeg"
+    Cache-Control = "public, max-age=86400"
