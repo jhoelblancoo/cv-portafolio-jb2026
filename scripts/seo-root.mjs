@@ -42,12 +42,17 @@ if (existsSync(gscSrc)) {
   console.warn(`Missing ${gscFile} in seo/; Search Console verification will 404 at site root.`);
 }
 
-// Locale builds bury public/ under /es and /en; also expose root icons.
+// Locale builds bury public/ under /es and /en; also expose root icons + OG image.
 for (const icon of ['favicon.ico', 'apple-touch-icon.png']) {
   const fromLocale = join(publish, 'es', icon);
   if (existsSync(fromLocale)) {
     copyFileSync(fromLocale, join(publish, icon));
   }
+}
+
+const ogShare = join(root, 'seo/og-share.jpg');
+if (existsSync(ogShare)) {
+  copyFileSync(ogShare, join(publish, 'og-share.jpg'));
 }
 
 const urls = [];

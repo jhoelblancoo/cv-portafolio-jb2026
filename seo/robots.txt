@@ -1,4 +1,28 @@
-# Temporary: portfolio not ready for indexing. Flip back to Allow + Sitemap when ready.
+# Temporary: Google indexing blocked until portfolio is ready.
+# Social preview bots are allowed so WhatsApp/LinkedIn can read Open Graph.
+
 User-agent: *
 Disallow: /
 Allow: /google3804d3f31e87917d.html
+Allow: /og-share.jpg
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /

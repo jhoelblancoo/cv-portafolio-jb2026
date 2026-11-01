@@ -6,7 +6,11 @@ import { filter } from 'rxjs/operators';
 import { getProjectBySlug } from '../../data/projects';
 
 const SITE = 'https://jhoelblanco.netlify.app';
-const OG_IMAGE_PATH = 'assets/photos/hero-graduation.jpg';
+/** Absolute site-root OG image (1200×630), published by scripts/seo-root.mjs */
+const OG_IMAGE = `${SITE}/og-share.jpg`;
+const OG_IMAGE_WIDTH = '1200';
+const OG_IMAGE_HEIGHT = '630';
+const OG_IMAGE_TYPE = 'image/jpeg';
 
 @Injectable({ providedIn: 'root' })
 export class SeoService {
@@ -42,11 +46,11 @@ export class SeoService {
     const canonical = this.absoluteUrl(this.locale, path);
     const alternateEs = this.absoluteUrl('es', path);
     const alternateEn = this.absoluteUrl('en', path);
-    const ogImage = `${SITE}/${this.locale}/${OG_IMAGE_PATH}`;
 
     this.title.setTitle(title);
     this.meta.updateTag({ name: 'description', content: description });
     // Temporary until portfolio is 100% ready; flip to index,follow later.
+    // Google stays blocked; Facebook/WhatsApp still read OG (see robots.txt bot allows).
     this.meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
     this.meta.updateTag({ name: 'googlebot', content: 'noindex, nofollow' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
@@ -55,11 +59,15 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:title', content: title });
     this.meta.updateTag({ property: 'og:description', content: description });
     this.meta.updateTag({ property: 'og:url', content: canonical });
-    this.meta.updateTag({ property: 'og:image', content: ogImage });
+    this.meta.updateTag({ property: 'og:image', content: OG_IMAGE });
+    this.meta.updateTag({ property: 'og:image:secure_url', content: OG_IMAGE });
+    this.meta.updateTag({ property: 'og:image:type', content: OG_IMAGE_TYPE });
+    this.meta.updateTag({ property: 'og:image:width', content: OG_IMAGE_WIDTH });
+    this.meta.updateTag({ property: 'og:image:height', content: OG_IMAGE_HEIGHT });
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
     this.meta.updateTag({ name: 'twitter:title', content: title });
     this.meta.updateTag({ name: 'twitter:description', content: description });
-    this.meta.updateTag({ name: 'twitter:image', content: ogImage });
+    this.meta.updateTag({ name: 'twitter:image', content: OG_IMAGE });
 
     this.setLink('canonical', canonical);
     this.setHreflang('es', alternateEs);
