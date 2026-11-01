@@ -38,7 +38,29 @@
       </div>
     }
 
-    <p class="project__note">{{ capturesNote }}</p>
+    @if (p.gallery?.length) {
+      <div class="project__gallery" aria-labelledby="project-gallery-title">
+        <h2 id="project-gallery-title">{{ galleryLabel }}</h2>
+        <ul class="project__shots">
+          @for (shot of p.gallery; track shot.src; let i = $index) {
+            <li class="project__shot" [style.--i]="i">
+              <figure>
+                <img
+                  [src]="shot.src"
+                  [alt]="shot.alt"
+                  width="720"
+                  height="1463"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </li>
+          }
+        </ul>
+      </div>
+    } @else {
+      <p class="project__note">{{ capturesNote }}</p>
+    }
   } @else {
     <header class="page__header">
       <h1>{{ notFound }}</h1>

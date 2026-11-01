@@ -44,6 +44,34 @@
           <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="project.pasarela.capture.methods" datatype="html">
+        <source>Lista de métodos de pago en la pasarela Chinchin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pasarela.capture.card" datatype="html">
+        <source>Formulario de Tarjeta Nacional</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pasarela.capture.pagoMovil" datatype="html">
+        <source>Flujo de reporte Pago Móvil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pasarela.capture.tip" datatype="html">
+        <source>Propina, tarjeta guardada y descuento</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="link.demo" datatype="html">
         <source>Demo</source>
         <context-group purpose="location">
@@ -735,11 +763,18 @@
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="project.capturesNote" datatype="html">
-        <source>Capturas y logos se agregarán en Slice 2.</source>
+      <trans-unit id="project.galleryLabel" datatype="html">
+        <source>Capturas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/project-detail/project-detail.ts</context>
           <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.capturesNote" datatype="html">
+        <source>Capturas y logos se agregarán cuando estén disponibles.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="project.notFound" datatype="html">

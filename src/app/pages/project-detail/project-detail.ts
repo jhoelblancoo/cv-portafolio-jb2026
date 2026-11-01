@@ -15,7 +15,8 @@ export class ProjectDetail {
   readonly metricLabel = $localize`:@@project.metricLabel:Métrica clave`;
   readonly stackLabel = $localize`:@@project.stackLabel:Stack`;
   readonly linksLabel = $localize`:@@project.linksLabel:Enlaces`;
-  readonly capturesNote = $localize`:@@project.capturesNote:Capturas y logos se agregarán en Slice 2.`;
+  readonly galleryLabel = $localize`:@@project.galleryLabel:Capturas`;
+  readonly capturesNote = $localize`:@@project.capturesNote:Capturas y logos se agregarán cuando estén disponibles.`;
   readonly notFound = $localize`:@@project.notFound:Proyecto no encontrado.`;
 
   readonly project: Project | undefined = getProjectBySlug(

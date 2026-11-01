@@ -172,13 +172,19 @@
 }
 
 .featured__link {
-  display: block;
+  display: grid;
+  gap: 1.25rem;
+  align-items: center;
   padding: 1.6rem 0.15rem;
   text-decoration: none;
   color: inherit;
   transition:
     padding-left 0.25s ease,
     background 0.25s ease;
+
+  @media (min-width: 720px) {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
 
   &:hover {
     padding-left: 0.55rem;
@@ -196,6 +202,29 @@
     .featured__name {
       color: var(--accent-bright);
     }
+
+    .featured__thumb img {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.featured__thumb {
+  justify-self: start;
+  width: 5.75rem;
+
+  @media (min-width: 720px) {
+    justify-self: end;
+    width: 6.75rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.85rem;
+    border: 1px solid var(--line-strong);
+    background: var(--bg-deep);
+    transition: transform 0.25s ease;
   }
 }
 

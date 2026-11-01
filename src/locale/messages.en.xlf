@@ -26,6 +26,22 @@
         <source>Web Angular</source>
         <target>Angular web</target>
       </trans-unit>
+      <trans-unit id="project.pasarela.capture.methods" datatype="html">
+        <source>Lista de métodos de pago en la pasarela Chinchin</source>
+        <target>Payment methods list in the Chinchin gateway</target>
+      </trans-unit>
+      <trans-unit id="project.pasarela.capture.card" datatype="html">
+        <source>Formulario de Tarjeta Nacional</source>
+        <target>National card form</target>
+      </trans-unit>
+      <trans-unit id="project.pasarela.capture.pagoMovil" datatype="html">
+        <source>Flujo de reporte Pago Móvil</source>
+        <target>Pago Móvil report flow</target>
+      </trans-unit>
+      <trans-unit id="project.pasarela.capture.tip" datatype="html">
+        <source>Propina, tarjeta guardada y descuento</source>
+        <target>Tip, saved card, and discount</target>
+      </trans-unit>
       <trans-unit id="link.demo" datatype="html">
         <source>Demo</source>
         <target>Demo</target>
@@ -414,9 +430,13 @@
         <source>Enlaces</source>
         <target>Links</target>
       </trans-unit>
+      <trans-unit id="project.galleryLabel" datatype="html">
+        <source>Capturas</source>
+        <target>Screenshots</target>
+      </trans-unit>
       <trans-unit id="project.capturesNote" datatype="html">
-        <source>Capturas y logos se agregarán en Slice 2.</source>
-        <target>Screenshots and logos will be added in Slice 2.</target>
+        <source>Capturas y logos se agregarán cuando estén disponibles.</source>
+        <target>Screenshots and logos will be added when available.</target>
       </trans-unit>
       <trans-unit id="project.notFound" datatype="html">
         <source>Proyecto no encontrado.</source>

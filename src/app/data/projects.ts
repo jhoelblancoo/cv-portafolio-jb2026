@@ -5,6 +5,11 @@ export interface ProjectLink {
   url: string;
 }
 
+export interface ProjectCapture {
+  src: string;
+  alt: string;
+}
+
 export interface Project {
   slug: string;
   name: string;
@@ -16,6 +21,9 @@ export interface Project {
   featured: boolean;
   role: string;
   links: ProjectLink[];
+  /** Featured-list thumbnail (relative to locale baseHref). */
+  cover?: string;
+  gallery?: ProjectCapture[];
 }
 
 /** Copy aligned with cv/source/i18n (ES source; EN via localize). Public URLs from Jhoel. */
@@ -30,6 +38,25 @@ export const PROJECTS: Project[] = [
     technologies: ['Angular'],
     featured: true,
     role: $localize`:@@project.pasarela.role:Web Angular`,
+    cover: 'assets/projects/pasarela/cover.webp',
+    gallery: [
+      {
+        src: 'assets/projects/pasarela/metodos-pago.webp',
+        alt: $localize`:@@project.pasarela.capture.methods:Lista de métodos de pago en la pasarela Chinchin`,
+      },
+      {
+        src: 'assets/projects/pasarela/tarjeta-nacional.webp',
+        alt: $localize`:@@project.pasarela.capture.card:Formulario de Tarjeta Nacional`,
+      },
+      {
+        src: 'assets/projects/pasarela/pago-movil.webp',
+        alt: $localize`:@@project.pasarela.capture.pagoMovil:Flujo de reporte Pago Móvil`,
+      },
+      {
+        src: 'assets/projects/pasarela/propina-descuento.webp',
+        alt: $localize`:@@project.pasarela.capture.tip:Propina, tarjeta guardada y descuento`,
+      },
+    ],
     links: [
       {
         kind: 'demo',

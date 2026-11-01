@@ -31,13 +31,27 @@
     @for (project of projects; track project.slug; let i = $index) {
       <li class="featured__item" [style.--i]="i">
         <a class="featured__link" [routerLink]="['/proyectos', project.slug]">
-          <div class="featured__meta">
-            <span class="featured__role">{{ project.role }}</span>
-            <span class="featured__metric">{{ project.metric }}</span>
+          <div class="featured__copy">
+            <div class="featured__meta">
+              <span class="featured__role">{{ project.role }}</span>
+              <span class="featured__metric">{{ project.metric }}</span>
+            </div>
+            <h3 class="featured__name">{{ project.name }}</h3>
+            <p class="featured__desc">{{ project.shortDescription }}</p>
+            <span class="featured__cta">{{ viewCase }} →</span>
           </div>
-          <h3 class="featured__name">{{ project.name }}</h3>
-          <p class="featured__desc">{{ project.shortDescription }}</p>
-          <span class="featured__cta">{{ viewCase }} →</span>
+          @if (project.cover) {
+            <div class="featured__thumb" aria-hidden="true">
+              <img
+                [src]="project.cover"
+                alt=""
+                width="720"
+                height="1463"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          }
         </a>
       </li>
     }
