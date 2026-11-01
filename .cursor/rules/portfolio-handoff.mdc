@@ -16,17 +16,17 @@ Mapa de capas: `.cursor/rules/portfolio-architecture.mdc`
 - No tratar Origin monorepo como remote del site live. No desplegar desde cuenta Netlify del agente.
 - Antes de trabajar: `git pull` en `main`.
 
-## Git / versión (excepción de este repo personal)
+## Git / versión
 
-- Aquí **sí** se puede: bump patch + entrada en `change.log.md` + **commit y push** a `main` cuando el usuario lo pida o al cerrar un lote de cambios (Netlify despliega solo).
-- Versionado: skill `version-changelog` → patch en `package.json` + `src/app/core/app-version.ts` + entrada arriba en `change.log.md` (autor `Jblanco`). El footer muestra `v{{APP_VERSION}}`.
-- Conventional commits (`feat:`, `fix:`, `chore:`, `docs:`).
+- **Nunca** `git commit` ni `git push` desde el agente: el usuario lo hace. Dejar archivos listos y decir qué falta commitear.
+- Versionado (cuando lo pida): skill `version-changelog` → patch en `package.json` + `src/app/core/app-version.ts` + entrada arriba en `change.log.md` (autor `Jblanco`). El footer muestra `v{{APP_VERSION}}`.
+- Conventional commits (`feat:`, `fix:`, `chore:`, `docs:`) — solo como sugerencia de mensaje si pide commit.
 - Comentarios en código: regla global `code-comments-format` (español).
 
 ## Commands
 
-- `npm start` — build prod + estático ES+EN puerto **4317** (switch idioma OK)
-- `npm run start:dev` — `ng serve` HMR, **un solo locale**
+- `npm start` — **build prod una vez** (`prestart`) + sirve estático ES+EN en **4317**. Si el server ya corre, **no** ve cambios nuevos: hay que pararlo y volver a `npm start`.
+- `npm run start:dev` — `ng serve` HMR (sí refresca al editar), **un solo locale**
 - `npm run build` — prerender ES+EN + `scripts/seo-root.mjs`
 - Publish: `dist/portfolio/browser`
 

@@ -52,8 +52,8 @@ npm install
 npm start
 ```
 
-- `npm start` = build + sirve ES+EN (idioma OK) — puerto típico **4317**
-- `npm run start:dev` = `ng serve` HMR, **un solo locale** (el switch EN no cambia idioma)
+- `npm start` = **build una vez** + sirve estático ES+EN (idioma OK) — puerto **4317**. Con el server ya arriba **no** hot-reload: reiniciar para ver cambios.
+- `npm run start:dev` = `ng serve` HMR (actualiza al editar), **un solo locale** (el switch EN no cambia idioma)
 - `npm run build` → `dist/portfolio/browser/{es,en}/` (+ `scripts/seo-root.mjs`: robots, sitemap, GSC file, og-share, icons)
 - Publish Netlify: `dist/portfolio/browser` (ver `netlify.toml`)
 
@@ -183,9 +183,9 @@ Cerrado / no tocar sin pedirlo: logo (OK), PDFs CV (OK), Search Console verify f
 2. Branch `main`, remote = GitHub `jhoelblancoo/cv-portafolio-jb2026`
 3. `git pull` antes de trabajar
 4. Leer mapa: `.cursor/rules/portfolio-architecture.mdc`. Comentarios: `code-comments-format` (ES)
-5. Cambios pequeños; al cerrar lote (o si pide): **versión patch** + entrada en `change.log.md` + **commit + push** a `main` (excepción de este repo personal; Netlify auto-deploy)
-6. Conventional commits (`feat:`, `fix:`, `chore:`, `docs:`)
-7. Probar con `npm start` si toca i18n/rutas; tras push, verificar Netlify
+5. Cambios pequeños; si pide versión: patch + `app-version.ts` + `change.log.md`. **Sin** commit/push (lo hace Jhoel)
+6. Sugerir mensaje conventional commit si lo pide (`feat:`, `fix:`, `chore:`, `docs:`)
+7. Probar local: reiniciar `npm start` o usar `start:dev` para HMR
 8. No reabrir Google indexación sin confirmación explícita de Jhoel
 9. No borrar `google3804d3f31e87917d.html` ni romper OG (`og-share.jpg`)
 

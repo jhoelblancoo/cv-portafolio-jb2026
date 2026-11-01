@@ -1,5 +1,11 @@
 # portfolio — changelog
 
+## [0.0.3] - 2026-11-01 - Jblanco
+
+### CHANGE
+
+- Handoff: el agente **no** hace commit/push (lo hace Jhoel); documentado reinicio de `npm start` vs `start:dev` (HMR)
+
 ## [0.0.2] - 2026-11-01 - Jblanco
 
 ### ADD
