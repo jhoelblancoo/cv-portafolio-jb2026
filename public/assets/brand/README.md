@@ -1,23 +1,12 @@
-# Brand — JB monogram (code brackets)
+# Brand — JB monogram (option 2, original only)
 
-Selected mark: interlocking **JB** with a `>` motif, accent `#003049`.
+Interlocking **JB** with code `>` motif, accent `#003049`. Assets derived only from the selected original monogram.
 
-## Marks (transparent PNG)
+## Shipped
 
-| File | Use |
-|---|---|
-| `jb-mark-navy.png` (+ `-{16,32,48,64,128,256,512}`) | Light UI / default nav |
-| `jb-mark-white.png` (+ sizes) | Dark UI nav |
-| `jb-reference-selected.png` | Design reference |
-| `jb-wordmark-navy.png` / `jb-wordmark-white.png` | Optional wordmark assets (not in header yet) |
+- `jb-mark-navy.png` + size variants — light UI / default nav (`jb-mark-navy-64.png`)
+- `jb-mark-white.png` + size variants — dark UI nav
+- `favicon.ico` — also at site root `/favicon.ico`
+- `/apple-touch-icon.png` — from `jb-mark-navy-180.png`
 
-## Favicons
-
-| File | Use |
-|---|---|
-| `favicon.ico` | Site root + legacy browsers (copied to `/favicon.ico`) |
-| `jb-favicon-light-{16,32,48,180,192,512}.png` | Light / default scheme |
-| `jb-favicon-dark-*` | `prefers-color-scheme: dark` |
-| `/apple-touch-icon.png` | From `jb-favicon-light-180.png` |
-
-Nav switches navy ↔ white with `html[data-theme]`. Indexing remains blocked until launch.
+No wordmarks, alternate tiles, or provisional JPG/WebP marks. Indexing remains blocked until launch.
