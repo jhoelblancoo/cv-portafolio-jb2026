@@ -1,5 +1,11 @@
 # portfolio — changelog
 
+## [0.0.5] - 2026-11-01 - Jblanco
+
+### CHANGE
+
+- README alineado al workflow actual; sin paths personales (quedan en HANDOFF); `falta.md` como puntero a gaps
+
 ## [0.0.4] - 2026-11-01 - Jblanco
 
 ### CHANGE

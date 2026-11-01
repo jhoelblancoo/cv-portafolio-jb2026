@@ -1,4 +1,4 @@
 /**
  * Versión visible en UI (footer). Mantener igual a package.json al hacer bump.
  */
-export const APP_VERSION = '0.0.4';
+export const APP_VERSION = '0.0.5';

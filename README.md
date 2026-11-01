@@ -1,22 +1,8 @@
 # Portafolio — Jhoel Blanco
 
-> **Agent / Cursor handoff:** see [`.cursor/HANDOFF.md`](.cursor/HANDOFF.md) (rules: [`.cursor/rules/portfolio-handoff.mdc`](.cursor/rules/portfolio-handoff.mdc)).
+App Angular standalone (CLI) con i18n ES/EN (`@angular/localize`), prerender estático y tema light/dark (acento `#003049`).
 
-App Angular standalone (CLI) con i18n ES/EN (`@angular/localize`), prerender estático y tema light/dark (acento `#003049`). Live: https://jhoelblanco.netlify.app/es/
-
-## Destino local / GitHub
-
-- **GitHub (solo portafolio):** https://github.com/jhoelblancoo/cv-portafolio-jb2026 — raíz = esta app Angular (sin el pipeline `cv/`).
-- **Monorepo Cursor/Origin:** sigue teniendo `cv/` + `portfolio/` juntos (PDFs, mentor, etc.).
-- **Carpeta Windows:** `C:\Users\jblanco\Documents\Info\CV` — `git pull` aquí antes de trabajar.
-
-```powershell
-git clone https://github.com/jhoelblancoo/cv-portafolio-jb2026.git "C:\Users\jblanco\Documents\Info\CV"
-cd "C:\Users\jblanco\Documents\Info\CV"
-git pull
-npm install
-npm start
-```
+**Live:** https://jhoelblanco.netlify.app/es/
 
 ## Requisitos
 
@@ -26,13 +12,15 @@ npm start
 ## Desarrollo local
 
 ```bash
+git clone https://github.com/jhoelblancoo/cv-portafolio-jb2026.git
+cd cv-portafolio-jb2026
 npm install
 npm start
 # = npm run build + sirve dist ES+EN en el puerto 4317
 ```
 
-- **`npm start`**: build de producción + servidor estático en **http://localhost:4317/** (redirige a `/es/`). Así el switch **ES/EN** del header funciona (`/es/` ↔ `/en/`).
-- **`npm run start:dev`**: `ng serve` solo en un locale (HMR). El botón EN **no** cambia idioma aquí: Angular localize es compile-time y `ng serve` no publica ambos builds a la vez.
+- **`npm start`**: build de producción **una vez** (`prestart`) + servidor estático en **http://localhost:4317/** (redirige a `/es/`). El switch **ES/EN** funciona (`/es/` ↔ `/en/`). Si el server ya está corriendo, **no** ve cambios nuevos: hay que pararlo y volver a `npm start`.
+- **`npm run start:dev`**: `ng serve` con HMR (sí refresca al editar), **un solo locale**. El botón EN **no** cambia idioma aquí: localize es compile-time.
 - Puerto: **4317**.
 
 ## Build / prerender
@@ -54,7 +42,7 @@ npm run i18n:extract
 
 | Script | Uso |
 |--------|-----|
-| `npm start` | build + static ES+EN en puerto **4317** (idioma OK) |
+| `npm start` | build + static ES+EN en puerto **4317** (idioma OK; reiniciar para ver cambios) |
 | `npm run start:dev` | `ng serve` HMR (un solo locale) |
 | `npm run start:en` | `ng serve` solo EN |
 | `npm run build` | build producción ES+EN + prerender + SEO root files |
@@ -62,16 +50,21 @@ npm run i18n:extract
 
 ## Estructura
 
-- `src/app/pages/home` — hero + featured
-- `src/app/pages/about` — posicionamiento + fotos
-- `src/app/pages/contact` — email, WhatsApp, LinkedIn, GitHub
-- `src/app/pages/project-detail` — caso por slug (+ galería si hay capturas)
+- `src/app/pages/*` — home, about, contact, project-detail
+- `src/app/data/projects.ts` — copy, covers, galleries, links
+- `src/app/core/` — tema + `app-version.ts` (versión del footer = `package.json`)
 - `public/assets/cv/` — PDFs CV ES/EN
 - `public/assets/brand/` — monograma JB
-- `.cursor/HANDOFF.md` — guía operativa para agentes
+- `change.log.md` — historial de versiones
 
 ## Gaps conocidos
 
 - Capturas/logos del resto de proyectos (Pasarela ya tiene)
 - Reabrir indexación Google **solo** cuando Jhoel lo pida (hoy: noindex + Disallow)
 - Dominio propio (opcional, después)
+
+Lista corta de pendientes: [`falta.md`](falta.md).
+
+## Para agentes Cursor
+
+Guía operativa: [`.cursor/HANDOFF.md`](.cursor/HANDOFF.md) · reglas: [`portfolio-handoff.mdc`](.cursor/rules/portfolio-handoff.mdc) · mapa de capas: [`portfolio-architecture.mdc`](.cursor/rules/portfolio-architecture.mdc).
