@@ -42,6 +42,14 @@ if (existsSync(gscSrc)) {
   console.warn(`Missing ${gscFile} in seo/; Search Console verification will 404 at site root.`);
 }
 
+// Locale builds bury public/ under /es and /en; also expose root icons.
+for (const icon of ['favicon.ico', 'apple-touch-icon.png']) {
+  const fromLocale = join(publish, 'es', icon);
+  if (existsSync(fromLocale)) {
+    copyFileSync(fromLocale, join(publish, icon));
+  }
+}
+
 const urls = [];
 for (const locale of ['es', 'en']) {
   for (const path of PATHS) {
