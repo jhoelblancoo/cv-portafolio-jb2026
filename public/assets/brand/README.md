@@ -1,12 +1,9 @@
-# Brand — JB monogram (option 2, original only)
+# Brand — single source monogram
 
-Interlocking **JB** with bracket cutouts (`>`), accent `#003049`. Assets are only from the rebuilt kit of the selected original mark.
+Only asset pipeline: one original PNG → white/near-black to alpha → LANCZOS sizes.
+No AI-regenerated variants.
 
-## Shipped
-
-- `jb-mark-navy*` — light UI / default nav (`jb-mark-navy-64.png`)
-- `jb-mark-white*` — dark UI nav
-- `jb-favicon-light*` / `jb-favicon-dark*` — scheme favicons
-- `favicon.ico` — also at site root; apple-touch from `jb-favicon-light-180.png`
-
-No wordmarks, JPG/WebP provisionals, or alternate tiles. Indexing remains blocked until launch.
+- Source: `jb-source.png` (canonical upload)
+- Nav: `jb-mark-navy-64.png` / `jb-mark-white-64.png`
+- Favicon: root `favicon.ico` + navy/white 32 PNG scheme links
+- Apple touch: `/apple-touch-icon.png` from navy-180 on white
