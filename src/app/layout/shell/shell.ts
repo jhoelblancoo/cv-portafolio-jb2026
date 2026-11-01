@@ -1,6 +1,7 @@
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { Component, inject, LOCALE_ID, PLATFORM_ID } from '@angular/core';
+import { Component, computed, inject, LOCALE_ID, PLATFORM_ID } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { ThemeService } from '../../core/theme.service';
 import { SiteFooter } from '../site-footer/site-footer';
 import { ThemeToggle } from '../../shared/theme-toggle/theme-toggle';
 
@@ -14,6 +15,13 @@ export class Shell {
   private readonly locale = inject(LOCALE_ID);
   private readonly document = inject(DOCUMENT);
   private readonly platformId = inject(PLATFORM_ID);
+  private readonly themeService = inject(ThemeService);
+
+  readonly brandMarkSrc = computed(() =>
+    this.themeService.theme() === 'dark'
+      ? 'assets/brand/jb-mark-white-64.png'
+      : 'assets/brand/jb-mark-navy-64.png',
+  );
 
   readonly navHome = $localize`:@@nav.home:Inicio`;
   readonly navProjects = $localize`:@@nav.projects:Proyectos`;
