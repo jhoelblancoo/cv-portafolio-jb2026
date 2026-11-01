@@ -9,6 +9,7 @@ Selected mark: interlocking **JB** with a `>` motif, accent `#003049`.
 | `jb-mark-navy.png` (+ `-{16,32,48,64,128,256,512}`) | Light UI / default nav |
 | `jb-mark-white.png` (+ sizes) | Dark UI nav |
 | `jb-reference-selected.png` | Design reference |
+| `jb-wordmark-navy.png` / `jb-wordmark-white.png` | Optional wordmark assets (not in header yet) |
 
 ## Favicons
 
