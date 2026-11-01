@@ -1,0 +1,46 @@
+<a class="skip-link" href="#contenido" i18n="@@a11y.skip">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a routerLink="/" class="brand-mark" aria-label="Jhoel Blanco — inicio">
+      <span class="brand-mark__name">Jhoel Blanco</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Principal">
+      <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">
+        {{ navHome }}
+      </a>
+      <a routerLink="/" fragment="proyectos">{{ navProjects }}</a>
+      <a routerLink="/sobre-mi" routerLinkActive="is-active">{{ navAbout }}</a>
+      <a routerLink="/contacto" routerLinkActive="is-active">{{ navContact }}</a>
+    </nav>
+
+    <div class="site-header__actions">
+      <a
+        class="lang-link"
+        [class.is-active]="!isSpanish"
+        [attr.href]="enHref"
+        hreflang="en"
+        lang="en"
+        (click)="goLocale('en', $event)"
+        >EN</a
+      >
+      <a
+        class="lang-link"
+        [class.is-active]="isSpanish"
+        [attr.href]="esHref"
+        hreflang="es"
+        lang="es"
+        (click)="goLocale('es', $event)"
+        >ES</a
+      >
+      <app-theme-toggle />
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+  <router-outlet />
+</main>
+
+<app-site-footer />

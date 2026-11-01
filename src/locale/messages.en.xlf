@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" target-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="project.pasarela.name" datatype="html">
+        <source>Pasarela de pago Chinchin</source>
+        <target>Chinchin Payment Gateway</target>
+      </trans-unit>
+      <trans-unit id="project.pasarela.subtitle" datatype="html">
+        <source>Pasarela de pago</source>
+        <target>Payment Gateway Solution</target>
+      </trans-unit>
+      <trans-unit id="project.pasarela.description" datatype="html">
+        <source>Solución de pagos a la medida, utilizada por empresas líderes de delivery, transporte, ecommerce y gubernamentales venezolanas. Procesa 1M+ transacciones mensuales de forma segura, integrando los métodos de pago de Chinchin y bancos nacionales.</source>
+        <target>Customized payment solution used by leading Venezuelan delivery, transportation, e-commerce, and government companies. Processes 1M+ secure monthly transactions, integrating Chinchin's payment methods with national banks.</target>
+      </trans-unit>
+      <trans-unit id="project.pasarela.short" datatype="html">
+        <source>Procesa 1M+ transacciones seguras mensuales para empresas líderes venezolanas.</source>
+        <target>Processes 1M+ secure monthly transactions for leading Venezuelan businesses.</target>
+      </trans-unit>
+      <trans-unit id="project.pasarela.metric" datatype="html">
+        <source>1M+ tx/mes</source>
+        <target>1M+ tx/month</target>
+      </trans-unit>
+      <trans-unit id="project.pasarela.role" datatype="html">
+        <source>Web Angular</source>
+        <target>Angular web</target>
+      </trans-unit>
+      <trans-unit id="link.demo" datatype="html">
+        <source>Demo</source>
+        <target>Demo</target>
+      </trans-unit>
+      <trans-unit id="project.bdt.name" datatype="html">
+        <source>BDT App</source>
+        <target>BDT App</target>
+      </trans-unit>
+      <trans-unit id="project.bdt.subtitle" datatype="html">
+        <source>Banco Digital de los Trabajadores</source>
+        <target>Banco Digital de los Trabajadores</target>
+      </trans-unit>
+      <trans-unit id="project.bdt.description" datatype="html">
+        <source>App oficial del banco #2 más grande de Venezuela, con más de 3 millones de usuarios. Replica todas las funcionalidades del portal web.</source>
+        <target>Official app of Venezuela's #2 largest public bank, serving 3M+ users. Replicates all web portal functionalities.</target>
+      </trans-unit>
+      <trans-unit id="project.bdt.short" datatype="html">
+        <source>App móvil oficial del banco público #2 de Venezuela, con 3M+ usuarios.</source>
+        <target>Official mobile app of Venezuela's #2 largest public bank, serving 3M+ users.</target>
+      </trans-unit>
+      <trans-unit id="project.bdt.metric" datatype="html">
+        <source>3M+ usuarios</source>
+        <target>3M+ users</target>
+      </trans-unit>
+      <trans-unit id="project.bdt.role" datatype="html">
+        <source>App Flutter · PM con banco</source>
+        <target>Flutter app · bank PM liaison</target>
+      </trans-unit>
+      <trans-unit id="link.appStore" datatype="html">
+        <source>App Store</source>
+        <target>App Store</target>
+      </trans-unit>
+      <trans-unit id="link.playStore" datatype="html">
+        <source>Google Play</source>
+        <target>Google Play</target>
+      </trans-unit>
+      <trans-unit id="project.onboarding.name" datatype="html">
+        <source>Onboarding digital Chinchin</source>
+        <target>Chinchin Digital Onboarding</target>
+      </trans-unit>
+      <trans-unit id="project.onboarding.subtitle" datatype="html">
+        <source>Producto Fintech</source>
+        <target>Fintech Product</target>
+      </trans-unit>
+      <trans-unit id="project.onboarding.description" datatype="html">
+        <source>Plataforma web de verificación de identidad altamente personalizable y 100% remota para personas y empresas. Elimina la necesidad de trámites presenciales (ej.: apertura de cuentas o registros de usuarios) en bancos, aseguradoras u otras instituciones.</source>
+        <target>Highly customizable 100% remote identity verification web platform for individuals and businesses. Eliminates need for in-person procedures (e.g., account opening, user registration) in banks, insurers, and other institutions.</target>
+      </trans-unit>
+      <trans-unit id="project.onboarding.short" datatype="html">
+        <source>Plataforma de verificación de identidad 100% remota. Elimina trámites presenciales en bancos, aseguradoras, etc.</source>
+        <target>100% remote identity verification platform. Eliminates need for in-person procedures in banks, insurers, and other institutions.</target>
+      </trans-unit>
+      <trans-unit id="project.onboarding.metric" datatype="html">
+        <source>KYC remoto 100%</source>
+        <target>100% remote KYC</target>
+      </trans-unit>
+      <trans-unit id="project.onboarding.role" datatype="html">
+        <source>Web Angular</source>
+        <target>Angular web</target>
+      </trans-unit>
+      <trans-unit id="link.live" datatype="html">
+        <source>Registro en vivo</source>
+        <target>Live registration</target>
+      </trans-unit>
+      <trans-unit id="project.pago.name" datatype="html">
+        <source>PagoChinchin</source>
+        <target>PagoChinchin</target>
+      </trans-unit>
+      <trans-unit id="project.pago.subtitle" datatype="html">
+        <source>Webs y App para Fintech</source>
+        <target>Fintech webs and apps</target>
+      </trans-unit>
+      <trans-unit id="project.pago.description" datatype="html">
+        <source>Ecosistema financiero completo de la fintech #1 en Venezuela, incluye aplicación web, móvil y sistema administrativo para gestionar pagos, transacciones bancarias, cuentas multimonedas y servicios básicos.</source>
+        <target>Complete financial ecosystem for Venezuela's #1 fintech, includes webs, mobile and administrative systems to manage payments, banking transactions, multi-currency accounts and basic services.</target>
+      </trans-unit>
+      <trans-unit id="project.pago.short" datatype="html">
+        <source>Ecosistema financiero completo de la fintech venezolana #1. Webs, app y sistema administrativo.</source>
+        <target>Complete financial ecosystem for Venezuela's #1 fintech — webs, app, and admin.</target>
+      </trans-unit>
+      <trans-unit id="project.pago.metric" datatype="html">
+        <source>Fintech #1 VE</source>
+        <target>Fintech #1 VE</target>
+      </trans-unit>
+      <trans-unit id="project.pago.role" datatype="html">
+        <source>Ecosistema B2C web + app</source>
+        <target>B2C web + app ecosystem</target>
+      </trans-unit>
+      <trans-unit id="link.web" datatype="html">
+        <source>Sitio web</source>
+        <target>Website</target>
+      </trans-unit>
+      <trans-unit id="project.business.name" datatype="html">
+        <source>Chinchin Business</source>
+        <target>Chinchin Business</target>
+      </trans-unit>
+      <trans-unit id="project.business.subtitle" datatype="html">
+        <source>Ecosistema B2B</source>
+        <target>B2B ecosystem</target>
+      </trans-unit>
+      <trans-unit id="project.business.description" datatype="html">
+        <source>Plataforma B2B de Chinchin para empresas: pagos, operaciones y servicios del ecosistema fintech #1 de Venezuela.</source>
+        <target>Chinchin's B2B platform for companies: payments, operations, and services in Venezuela's #1 fintech ecosystem.</target>
+      </trans-unit>
+      <trans-unit id="project.business.short" datatype="html">
+        <source>Portal B2B de Chinchin para empresas del ecosistema fintech.</source>
+        <target>Chinchin B2B portal for companies in the fintech ecosystem.</target>
+      </trans-unit>
+      <trans-unit id="project.business.metric" datatype="html">
+        <source>B2B</source>
+        <target>B2B</target>
+      </trans-unit>
+      <trans-unit id="project.business.role" datatype="html">
+        <source>Web B2B</source>
+        <target>B2B web</target>
+      </trans-unit>
+      <trans-unit id="project.botly.name" datatype="html">
+        <source>Botly</source>
+        <target>Botly</target>
+      </trans-unit>
+      <trans-unit id="project.botly.subtitle" datatype="html">
+        <source>Tesis universitaria</source>
+        <target>University thesis</target>
+      </trans-unit>
+      <trans-unit id="project.botly.description" datatype="html">
+        <source>Sistema para la adquisición, personalización y administración de bots de Telegram, dirigido a personas que no cuentan con experticia en programación.</source>
+        <target>System for the acquisition, customization and administration of Telegram bots, aimed at people who do not have programming expertise.</target>
+      </trans-unit>
+      <trans-unit id="project.botly.short" datatype="html">
+        <source>Sistema para adquisición y administración de bots de Telegram sin saber programar.</source>
+        <target>System to acquire and administer Telegram bots without coding skills.</target>
+      </trans-unit>
+      <trans-unit id="project.botly.metric" datatype="html">
+        <source>Telegram bots</source>
+        <target>Telegram bots</target>
+      </trans-unit>
+      <trans-unit id="project.botly.role" datatype="html">
+        <source>Web + backend + diseño</source>
+        <target>Web + backend + design</target>
+      </trans-unit>
+      <trans-unit id="link.liveSite" datatype="html">
+        <source>Sitio en vivo</source>
+        <target>Live site</target>
+      </trans-unit>
+      <trans-unit id="project.bdv.name" datatype="html">
+        <source>BDV Cambios</source>
+        <target>BDV Exchange</target>
+      </trans-unit>
+      <trans-unit id="project.bdv.subtitle" datatype="html">
+        <source>Página web bancaria</source>
+        <target>Banking website</target>
+      </trans-unit>
+      <trans-unit id="project.bdv.description" datatype="html">
+        <source>Sistema de cambio de divisas del Banco de Venezuela (#1 del país con 15M+ clientes). Permite operaciones con monedas nacionales e internacionales, integrada directamente con su core bancario.</source>
+        <target>Exchange system of Banco de Venezuela (#1 in the country with 15M+ clients). Allows operations with national and international currencies, directly integrated with its banking core system.</target>
+      </trans-unit>
+      <trans-unit id="project.bdv.short" datatype="html">
+        <source>Cambio de divisas del Banco de Venezuela (#1 del país, 15M+ clientes), integrado al core bancario.</source>
+        <target>FX exchange for Banco de Venezuela (#1 in the country, 15M+ clients), integrated with the bank's core.</target>
+      </trans-unit>
+      <trans-unit id="project.bdv.metric" datatype="html">
+        <source>BDV 15M+ clientes</source>
+        <target>BDV 15M+ clients</target>
+      </trans-unit>
+      <trans-unit id="project.bdv.role" datatype="html">
+        <source>Web Angular</source>
+        <target>Angular web</target>
+      </trans-unit>
+      <trans-unit id="project.intt.name" datatype="html">
+        <source>INTT Multas</source>
+        <target>INTT Multas</target>
+      </trans-unit>
+      <trans-unit id="project.intt.subtitle" datatype="html">
+        <source>App de Instituto Nacional de Transporte Terrestre (INTT)</source>
+        <target>App for Instituto Nacional de Transporte Terrestre (INTT)</target>
+      </trans-unit>
+      <trans-unit id="project.intt.description" datatype="html">
+        <source>App Flutter (despliegue privado por APK) para digitalizar multas de tránsito del INTT: gestión, apelaciones, notificaciones y pagos con Pasarela Chinchin. Desarrollo frontend y enlace con el cliente.</source>
+        <target>Flutter app (private APK deployment) to digitize INTT traffic fines: management, appeals, notifications, and payments via Chinchin Payment Gateway. Frontend development and client liaison.</target>
+      </trans-unit>
+      <trans-unit id="project.intt.short" datatype="html">
+        <source>App Flutter (APK privada) para multas INTT: gestión, apelaciones y pagos Chinchin. Desarrollo frontend y enlace con el cliente.</source>
+        <target>Flutter app (private APK) for INTT fines: management, appeals, and Chinchin payments. Frontend development and client liaison.</target>
+      </trans-unit>
+      <trans-unit id="project.intt.metric" datatype="html">
+        <source>APK privada</source>
+        <target>Private APK</target>
+      </trans-unit>
+      <trans-unit id="project.intt.role" datatype="html">
+        <source>FE Flutter · enlace con cliente</source>
+        <target>Flutter FE · client liaison</target>
+      </trans-unit>
+      <trans-unit id="a11y.skip" datatype="html">
+        <source>Saltar al contenido</source>
+        <target>Skip to content</target>
+      </trans-unit>
+      <trans-unit id="nav.home" datatype="html">
+        <source>Inicio</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="nav.projects" datatype="html">
+        <source>Proyectos</source>
+        <target>Projects</target>
+      </trans-unit>
+      <trans-unit id="nav.about" datatype="html">
+        <source>Sobre mí</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="nav.contact" datatype="html">
+        <source>Contacto</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="footer.role" datatype="html">
+        <source>Frontend Engineer</source>
+        <target>Frontend Engineer</target>
+      </trans-unit>
+      <trans-unit id="footer.cv" datatype="html">
+        <source>Descargar CV</source>
+        <target>Download CV</target>
+      </trans-unit>
+      <trans-unit id="footer.cv.es" datatype="html">
+        <source>CV ES (largo)</source>
+        <target>CV ES (long)</target>
+      </trans-unit>
+      <trans-unit id="footer.cv.en" datatype="html">
+        <source>CV EN (largo)</source>
+        <target>CV EN (long)</target>
+      </trans-unit>
+      <trans-unit id="footer.about" datatype="html">
+        <source>Sobre mí</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="footer.contact" datatype="html">
+        <source>Contacto</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="about.title" datatype="html">
+        <source>Sobre mí</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="about.who.title" datatype="html">
+        <source>Qué soy</source>
+        <target>Who I am</target>
+      </trans-unit>
+      <trans-unit id="about.who.body" datatype="html">
+        <source>Ingeniero de Sistemas (UNIMET, Caracas). ~5 años en frontend: de pasante a Coordinador Frontend en Chinchin (fintech #1 de Venezuela), manteniendo, desarrollando, diseñando y coordinando webs y apps propias y de clientes (Banco Plaza, Exterior, BDV, BDT, PedidosYa, INTT, Yummy, Yango, …).</source>
+        <target>Systems Engineer (UNIMET, Caracas). ~5 years in frontend: from intern to Frontend Coordinator at Chinchin (Venezuela's #1 fintech), maintaining, building, designing, and coordinating web and apps for in-house and client products (Banco Plaza, Exterior, BDV, BDT, PedidosYa, INTT, Yummy, Yango, …).</target>
+      </trans-unit>
+      <trans-unit id="about.know.title" datatype="html">
+        <source>Qué sé</source>
+        <target>What I know</target>
+      </trans-unit>
+      <trans-unit id="about.know.body" datatype="html">
+        <source>Angular (web), Flutter (móvil), Figma, Jira, IA aplicada, Node.js + PostgreSQL/Mongo a nivel práctico, Postman/Newman.</source>
+        <target>Angular (web), Flutter (mobile), Figma, Jira, applied AI, practical Node.js + PostgreSQL/Mongo, Postman/Newman.</target>
+      </trans-unit>
+      <trans-unit id="about.seek.title" datatype="html">
+        <source>Qué busco</source>
+        <target>What I'm looking for</target>
+      </trans-unit>
+      <trans-unit id="about.seek.body" datatype="html">
+        <source>Rol frontend remoto o presencial fuera de Venezuela, con posibilidad de relocation.</source>
+        <target>A frontend role remote or on-site outside Venezuela, with relocation potential.</target>
+      </trans-unit>
+      <trans-unit id="about.edu.title" datatype="html">
+        <source>Educación</source>
+        <target>Education</target>
+      </trans-unit>
+      <trans-unit id="about.edu.unimet" datatype="html">
+        <source>Ingeniero de sistemas — Universidad Metropolitana</source>
+        <target>Systems Engineering — Universidad Metropolitana</target>
+      </trans-unit>
+      <trans-unit id="about.edu.santa" datatype="html">
+        <source>Bachiller en ciencias — Colegio Santa Rosa de Lima</source>
+        <target>High School (Science) — Colegio Santa Rosa de Lima</target>
+      </trans-unit>
+      <trans-unit id="about.edu.uma" datatype="html">
+        <source>Diplomado en Inteligencia Artificial Aumentada — Universidad Monteávila (126 h)</source>
+        <target>Diploma in Augmented Artificial Intelligence — Universidad Monteávila (126 hrs)</target>
+      </trans-unit>
+      <trans-unit id="about.cta" datatype="html">
+        <source>Ir a contacto</source>
+        <target>Go to contact</target>
+      </trans-unit>
+      <trans-unit id="about.gallery.title" datatype="html">
+        <source>Momentos</source>
+        <target>Moments</target>
+      </trans-unit>
+      <trans-unit id="about.gallery.lead" datatype="html">
+        <source>Graduación UNIMET, viajes y el día a día fuera de la pantalla.</source>
+        <target>UNIMET graduation, travel, and life away from the screen.</target>
+      </trans-unit>
+      <trans-unit id="about.photo.sagrada" datatype="html">
+        <source>Jhoel frente a la Sagrada Família</source>
+        <target>Jhoel in front of the Sagrada Família</target>
+      </trans-unit>
+      <trans-unit id="about.photo.graduation" datatype="html">
+        <source>Graduación UNIMET con diploma</source>
+        <target>UNIMET graduation with diploma</target>
+      </trans-unit>
+      <trans-unit id="about.photo.plaza" datatype="html">
+        <source>Jhoel en Plaza Mayor, Madrid</source>
+        <target>Jhoel at Plaza Mayor, Madrid</target>
+      </trans-unit>
+      <trans-unit id="about.photo.cafe" datatype="html">
+        <source>Jhoel en un café al aire libre</source>
+        <target>Jhoel at an outdoor café</target>
+      </trans-unit>
+      <trans-unit id="contact.title" datatype="html">
+        <source>Contacto</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="contact.lead" datatype="html">
+        <source>Escribime por el canal que te resulte más cómodo. Sin formularios: solo links directos.</source>
+        <target>Reach out on whichever channel works best. No forms — direct links only.</target>
+      </trans-unit>
+      <trans-unit id="contact.email" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="contact.whatsapp" datatype="html">
+        <source>WhatsApp</source>
+        <target>WhatsApp</target>
+      </trans-unit>
+      <trans-unit id="contact.linkedin" datatype="html">
+        <source>LinkedIn</source>
+        <target>LinkedIn</target>
+      </trans-unit>
+      <trans-unit id="contact.github" datatype="html">
+        <source>GitHub</source>
+        <target>GitHub</target>
+      </trans-unit>
+      <trans-unit id="home.headline" datatype="html">
+        <source>Frontend Engineer</source>
+        <target>Frontend Engineer</target>
+      </trans-unit>
+      <trans-unit id="home.problem" datatype="html">
+        <source>Construyo y coordino productos frontend (web Angular y apps Flutter) que digitalizan pagos, banca y operaciones críticas para fintechs y sus clientes enterprise — de requerimiento a producción, con calidad y métricas de uso reales.</source>
+        <target>I build and coordinate frontend products (Angular web and Flutter apps) that digitize payments, banking, and critical operations for fintechs and their enterprise clients — from requirements to production, with quality and real usage metrics.</target>
+      </trans-unit>
+      <trans-unit id="home.cta.projects" datatype="html">
+        <source>Ver proyectos</source>
+        <target>View projects</target>
+      </trans-unit>
+      <trans-unit id="home.cta.contact" datatype="html">
+        <source>Contactar</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="home.featured.title" datatype="html">
+        <source>Proyectos destacados</source>
+        <target>Featured projects</target>
+      </trans-unit>
+      <trans-unit id="home.featured.lead" datatype="html">
+        <source>Casos con métricas reales del CV: pagos, banca móvil y onboarding digital.</source>
+        <target>Cases with real CV metrics: payments, mobile banking, and digital onboarding.</target>
+      </trans-unit>
+      <trans-unit id="home.featured.view" datatype="html">
+        <source>Ver caso</source>
+        <target>View case</target>
+      </trans-unit>
+      <trans-unit id="home.more.title" datatype="html">
+        <source>Más proyectos</source>
+        <target>More projects</target>
+      </trans-unit>
+      <trans-unit id="home.more.lead" datatype="html">
+        <source>PagoChinchin, Business, Botly, BDV Cambios e INTT Multas.</source>
+        <target>PagoChinchin, Business, Botly, BDV Exchange, and INTT Multas.</target>
+      </trans-unit>
+      <trans-unit id="project.roleLabel" datatype="html">
+        <source>Rol</source>
+        <target>Role</target>
+      </trans-unit>
+      <trans-unit id="project.back" datatype="html">
+        <source>Volver a proyectos</source>
+        <target>Back to projects</target>
+      </trans-unit>
+      <trans-unit id="project.metricLabel" datatype="html">
+        <source>Métrica clave</source>
+        <target>Key metric</target>
+      </trans-unit>
+      <trans-unit id="project.stackLabel" datatype="html">
+        <source>Stack</source>
+        <target>Stack</target>
+      </trans-unit>
+      <trans-unit id="project.linksLabel" datatype="html">
+        <source>Enlaces</source>
+        <target>Links</target>
+      </trans-unit>
+      <trans-unit id="project.capturesNote" datatype="html">
+        <source>Capturas y logos se agregarán en Slice 2.</source>
+        <target>Screenshots and logos will be added in Slice 2.</target>
+      </trans-unit>
+      <trans-unit id="project.notFound" datatype="html">
+        <source>Proyecto no encontrado.</source>
+        <target>Project not found.</target>
+      </trans-unit>
+      <trans-unit id="theme.toDark" datatype="html">
+        <source>Cambiar a tema oscuro</source>
+        <target>Switch to dark theme</target>
+      </trans-unit>
+      <trans-unit id="theme.toLight" datatype="html">
+        <source>Cambiar a tema claro</source>
+        <target>Switch to light theme</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,48 @@
+<section class="page project">
+  @if (project; as p) {
+    <a class="project__back" routerLink="/" fragment="proyectos">{{ backLabel }}</a>
+    <header class="page__header">
+      <p class="page__brand">Jhoel Blanco</p>
+      <p class="project__subtitle">{{ p.subtitle }}</p>
+      <h1>{{ p.name }}</h1>
+      <p class="page__lead">{{ p.description }}</p>
+    </header>
+
+    <dl class="project__facts">
+      <div>
+        <dt>{{ metricLabel }}</dt>
+        <dd>{{ p.metric }}</dd>
+      </div>
+      <div>
+        <dt>{{ stackLabel }}</dt>
+        <dd>{{ p.technologies.join(' · ') }}</dd>
+      </div>
+      <div>
+        <dt i18n="@@project.roleLabel">Rol</dt>
+        <dd>{{ p.role }}</dd>
+      </div>
+    </dl>
+
+    @if (p.links.length) {
+      <div class="project__links">
+        <h2>{{ linksLabel }}</h2>
+        <ul>
+          @for (link of p.links; track link.url) {
+            <li>
+              <a class="project__link" [href]="link.url" target="_blank" rel="noopener noreferrer">
+                {{ link.label }}
+              </a>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+
+    <p class="project__note">{{ capturesNote }}</p>
+  } @else {
+    <header class="page__header">
+      <h1>{{ notFound }}</h1>
+      <a routerLink="/">{{ backLabel }}</a>
+    </header>
+  }
+</section>

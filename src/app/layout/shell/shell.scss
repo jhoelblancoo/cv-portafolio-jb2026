@@ -1,0 +1,140 @@
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0.75rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: 0.35rem;
+
+  &:focus {
+    left: 0.75rem;
+  }
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'brand actions'
+    'nav nav';
+  gap: 0.55rem 0.75rem;
+  align-items: center;
+}
+
+.brand-mark {
+  grid-area: brand;
+  text-decoration: none;
+  color: var(--text);
+  min-width: 0;
+}
+
+.brand-mark__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: -0.02em;
+}
+
+.site-nav {
+  grid-area: nav;
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 0.1rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.84rem;
+    font-weight: 550;
+    white-space: nowrap;
+    padding: 0.35rem 0.55rem;
+    border-radius: 0.3rem;
+    transition:
+      color 0.2s ease,
+      background 0.2s ease;
+
+    &:hover,
+    &.is-active {
+      color: var(--text);
+      background: color-mix(in srgb, var(--accent) 8%, transparent);
+    }
+  }
+}
+
+.site-header__actions {
+  grid-area: actions;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  justify-self: end;
+}
+
+.lang-link {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--muted);
+  padding: 0.25rem 0.35rem;
+  border-radius: 0.25rem;
+  min-height: 2rem;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    color: var(--text);
+  }
+}
+
+@media (min-width: 840px) {
+  .site-header__inner {
+    display: flex;
+    padding: 0.9rem 1.25rem;
+    gap: 1rem;
+  }
+
+  .brand-mark__name {
+    font-size: 1.05rem;
+  }
+
+  .site-nav {
+    overflow: visible;
+    gap: 1.25rem;
+    flex: 1;
+    justify-content: center;
+
+    a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      padding: 0;
+      background: transparent;
+
+      &:hover,
+      &.is-active {
+        background: transparent;
+      }
+    }
+  }
+}

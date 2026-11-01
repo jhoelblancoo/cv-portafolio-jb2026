@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <p class="site-footer__name">Jhoel Blanco</p>
+      <p class="site-footer__role" i18n="@@footer.role">Frontend Engineer</p>
+    </div>
+
+    <div class="site-footer__cv">
+      <p class="site-footer__label">{{ cvLabel }}</p>
+      <div class="site-footer__cv-links">
+        <a class="cv-btn" href="assets/cv/Jhoel_Blanco_CV_ES_L.pdf" download>{{ cvEs }}</a>
+        <a class="cv-btn" href="assets/cv/Jhoel_Blanco_CV_EN_L.pdf" download>{{ cvEn }}</a>
+      </div>
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a routerLink="/sobre-mi">{{ about }}</a>
+      <a routerLink="/contacto">{{ contact }}</a>
+      <a href="mailto:jhoel10blanco@gmail.com">Email</a>
+      <a href="https://wa.me/584126168206" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/jhoelblanco" target="_blank" rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+      <a href="https://github.com/jhoelblancoo" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </div>
+  <p class="site-footer__copy">© {{ year }} Jhoel Blanco</p>
+</footer>

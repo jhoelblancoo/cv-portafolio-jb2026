@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="project.pasarela.name" datatype="html">
+        <source>Pasarela de pago Chinchin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pasarela.subtitle" datatype="html">
+        <source>Pasarela de pago</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pasarela.description" datatype="html">
+        <source>Solución de pagos a la medida, utilizada por empresas líderes de delivery, transporte, ecommerce y gubernamentales venezolanas. Procesa 1M+ transacciones mensuales de forma segura, integrando los métodos de pago de Chinchin y bancos nacionales.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pasarela.short" datatype="html">
+        <source>Procesa 1M+ transacciones seguras mensuales para empresas líderes venezolanas.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pasarela.metric" datatype="html">
+        <source>1M+ tx/mes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pasarela.role" datatype="html">
+        <source>Web Angular</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="link.demo" datatype="html">
+        <source>Demo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdt.name" datatype="html">
+        <source>BDT App</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdt.subtitle" datatype="html">
+        <source>Banco Digital de los Trabajadores</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdt.description" datatype="html">
+        <source>App oficial del banco #2 más grande de Venezuela, con más de 3 millones de usuarios. Replica todas las funcionalidades del portal web.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdt.short" datatype="html">
+        <source>App móvil oficial del banco público #2 de Venezuela, con 3M+ usuarios.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdt.metric" datatype="html">
+        <source>3M+ usuarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdt.role" datatype="html">
+        <source>App Flutter · PM con banco</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="link.appStore" datatype="html">
+        <source>App Store</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="link.playStore" datatype="html">
+        <source>Google Play</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.onboarding.name" datatype="html">
+        <source>Onboarding digital Chinchin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.onboarding.subtitle" datatype="html">
+        <source>Producto Fintech</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.onboarding.description" datatype="html">
+        <source>Plataforma web de verificación de identidad altamente personalizable y 100% remota para personas y empresas. Elimina la necesidad de trámites presenciales (ej.: apertura de cuentas o registros de usuarios) en bancos, aseguradoras u otras instituciones.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.onboarding.short" datatype="html">
+        <source>Plataforma de verificación de identidad 100% remota. Elimina trámites presenciales en bancos, aseguradoras, etc.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.onboarding.metric" datatype="html">
+        <source>KYC remoto 100%</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.onboarding.role" datatype="html">
+        <source>Web Angular</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="link.live" datatype="html">
+        <source>Registro en vivo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pago.name" datatype="html">
+        <source>PagoChinchin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pago.subtitle" datatype="html">
+        <source>Webs y App para Fintech</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pago.description" datatype="html">
+        <source>Ecosistema financiero completo de la fintech #1 en Venezuela, incluye aplicación web, móvil y sistema administrativo para gestionar pagos, transacciones bancarias, cuentas multimonedas y servicios básicos.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pago.short" datatype="html">
+        <source>Ecosistema financiero completo de la fintech venezolana #1. Webs, app y sistema administrativo.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pago.metric" datatype="html">
+        <source>Fintech #1 VE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.pago.role" datatype="html">
+        <source>Ecosistema B2C web + app</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="link.web" datatype="html">
+        <source>Sitio web</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.business.name" datatype="html">
+        <source>Chinchin Business</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.business.subtitle" datatype="html">
+        <source>Ecosistema B2B</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.business.description" datatype="html">
+        <source>Plataforma B2B de Chinchin para empresas: pagos, operaciones y servicios del ecosistema fintech #1 de Venezuela.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.business.short" datatype="html">
+        <source>Portal B2B de Chinchin para empresas del ecosistema fintech.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.business.metric" datatype="html">
+        <source>B2B</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.business.role" datatype="html">
+        <source>Web B2B</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.botly.name" datatype="html">
+        <source>Botly</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.botly.subtitle" datatype="html">
+        <source>Tesis universitaria</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.botly.description" datatype="html">
+        <source>Sistema para la adquisición, personalización y administración de bots de Telegram, dirigido a personas que no cuentan con experticia en programación.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.botly.short" datatype="html">
+        <source>Sistema para adquisición y administración de bots de Telegram sin saber programar.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.botly.metric" datatype="html">
+        <source>Telegram bots</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.botly.role" datatype="html">
+        <source>Web + backend + diseño</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="link.liveSite" datatype="html">
+        <source>Sitio en vivo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdv.name" datatype="html">
+        <source>BDV Cambios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdv.subtitle" datatype="html">
+        <source>Página web bancaria</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdv.description" datatype="html">
+        <source>Sistema de cambio de divisas del Banco de Venezuela (#1 del país con 15M+ clientes). Permite operaciones con monedas nacionales e internacionales, integrada directamente con su core bancario.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdv.short" datatype="html">
+        <source>Cambio de divisas del Banco de Venezuela (#1 del país, 15M+ clientes), integrado al core bancario.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdv.metric" datatype="html">
+        <source>BDV 15M+ clientes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.bdv.role" datatype="html">
+        <source>Web Angular</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.intt.name" datatype="html">
+        <source>INTT Multas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.intt.subtitle" datatype="html">
+        <source>App de Instituto Nacional de Transporte Terrestre (INTT)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.intt.description" datatype="html">
+        <source>App Flutter (despliegue privado por APK) para digitalizar multas de tránsito del INTT: gestión, apelaciones, notificaciones y pagos con Pasarela Chinchin. Desarrollo frontend y enlace con el cliente.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.intt.short" datatype="html">
+        <source>App Flutter (APK privada) para multas INTT: gestión, apelaciones y pagos Chinchin. Desarrollo frontend y enlace con el cliente.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.intt.metric" datatype="html">
+        <source>APK privada</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.intt.role" datatype="html">
+        <source>FE Flutter · enlace con cliente</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/projects.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y.skip" datatype="html">
+        <source>Saltar al contenido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/shell/shell.html</context>
+          <context context-type="linenumber">1,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.home" datatype="html">
+        <source>Inicio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/shell/shell.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.projects" datatype="html">
+        <source>Proyectos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/shell/shell.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.about" datatype="html">
+        <source>Sobre mí</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/shell/shell.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.contact" datatype="html">
+        <source>Contacto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/shell/shell.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.role" datatype="html">
+        <source>Frontend Engineer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.cv" datatype="html">
+        <source>Descargar CV</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.cv.es" datatype="html">
+        <source>CV ES (largo)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.cv.en" datatype="html">
+        <source>CV EN (largo)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.about" datatype="html">
+        <source>Sobre mí</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.contact" datatype="html">
+        <source>Contacto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.title" datatype="html">
+        <source>Sobre mí</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.who.title" datatype="html">
+        <source>Qué soy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.who.body" datatype="html">
+        <source>Ingeniero de Sistemas (UNIMET, Caracas). ~5 años en frontend: de pasante a Coordinador Frontend en Chinchin (fintech #1 de Venezuela), manteniendo, desarrollando, diseñando y coordinando webs y apps propias y de clientes (Banco Plaza, Exterior, BDV, BDT, PedidosYa, INTT, Yummy, Yango, …).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.know.title" datatype="html">
+        <source>Qué sé</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.know.body" datatype="html">
+        <source>Angular (web), Flutter (móvil), Figma, Jira, IA aplicada, Node.js + PostgreSQL/Mongo a nivel práctico, Postman/Newman.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.seek.title" datatype="html">
+        <source>Qué busco</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.seek.body" datatype="html">
+        <source>Rol frontend remoto o presencial fuera de Venezuela, con posibilidad de relocation.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.edu.title" datatype="html">
+        <source>Educación</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.edu.unimet" datatype="html">
+        <source>Ingeniero de sistemas — Universidad Metropolitana</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.edu.santa" datatype="html">
+        <source>Bachiller en ciencias — Colegio Santa Rosa de Lima</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.edu.uma" datatype="html">
+        <source>Diplomado en Inteligencia Artificial Aumentada — Universidad Monteávila (126 h)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.cta" datatype="html">
+        <source>Ir a contacto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.gallery.title" datatype="html">
+        <source>Momentos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.gallery.lead" datatype="html">
+        <source>Graduación UNIMET, viajes y el día a día fuera de la pantalla.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.photo.sagrada" datatype="html">
+        <source>Jhoel frente a la Sagrada Família</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.photo.graduation" datatype="html">
+        <source>Graduación UNIMET con diploma</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.photo.plaza" datatype="html">
+        <source>Jhoel en Plaza Mayor, Madrid</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.photo.cafe" datatype="html">
+        <source>Jhoel en un café al aire libre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about/about.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.title" datatype="html">
+        <source>Contacto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.lead" datatype="html">
+        <source>Escribime por el canal que te resulte más cómodo. Sin formularios: solo links directos.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.email" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.whatsapp" datatype="html">
+        <source>WhatsApp</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.linkedin" datatype="html">
+        <source>LinkedIn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.github" datatype="html">
+        <source>GitHub</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.headline" datatype="html">
+        <source>Frontend Engineer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.problem" datatype="html">
+        <source>Construyo y coordino productos frontend (web Angular y apps Flutter) que digitalizan pagos, banca y operaciones críticas para fintechs y sus clientes enterprise — de requerimiento a producción, con calidad y métricas de uso reales.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.cta.projects" datatype="html">
+        <source>Ver proyectos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.cta.contact" datatype="html">
+        <source>Contactar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.featured.title" datatype="html">
+        <source>Proyectos destacados</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.featured.lead" datatype="html">
+        <source>Casos con métricas reales del CV: pagos, banca móvil y onboarding digital.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.featured.view" datatype="html">
+        <source>Ver caso</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.more.title" datatype="html">
+        <source>Más proyectos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.more.lead" datatype="html">
+        <source>PagoChinchin, Business, Botly, BDV Cambios e INTT Multas.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.roleLabel" datatype="html">
+        <source>Rol</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/project-detail/project-detail.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.back" datatype="html">
+        <source>Volver a proyectos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.metricLabel" datatype="html">
+        <source>Métrica clave</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.stackLabel" datatype="html">
+        <source>Stack</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.linksLabel" datatype="html">
+        <source>Enlaces</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.capturesNote" datatype="html">
+        <source>Capturas y logos se agregarán en Slice 2.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="project.notFound" datatype="html">
+        <source>Proyecto no encontrado.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="theme.toDark" datatype="html">
+        <source>Cambiar a tema oscuro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/theme-toggle/theme-toggle.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="theme.toLight" datatype="html">
+        <source>Cambiar a tema claro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/theme-toggle/theme-toggle.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

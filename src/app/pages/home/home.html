@@ -1,0 +1,75 @@
+<section class="hero" aria-labelledby="hero-brand">
+  <div class="hero__media" aria-hidden="true">
+    <img
+      class="hero__photo"
+      src="assets/photos/hero-graduation.jpg"
+      alt=""
+      width="1350"
+      height="1800"
+      fetchpriority="high"
+    />
+    <div class="hero__scrim"></div>
+  </div>
+  <div class="hero__inner">
+    <p id="hero-brand" class="hero__brand">Jhoel Blanco</p>
+    <h1 class="hero__headline">{{ headline }}</h1>
+    <p class="hero__problem">{{ problem }}</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#proyectos">{{ ctaProjects }}</a>
+      <a class="btn btn--ghost" routerLink="/contacto">{{ ctaContact }}</a>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos" class="featured" aria-labelledby="featured-title">
+  <div class="featured__intro">
+    <h2 id="featured-title">{{ featuredTitle }}</h2>
+    <p>{{ featuredLead }}</p>
+  </div>
+
+  <ul class="featured__list">
+    @for (project of projects; track project.slug; let i = $index) {
+      <li class="featured__item" [style.--i]="i">
+        <a class="featured__link" [routerLink]="['/proyectos', project.slug]">
+          <div class="featured__meta">
+            <span class="featured__role">{{ project.role }}</span>
+            <span class="featured__metric">{{ project.metric }}</span>
+          </div>
+          <h3 class="featured__name">{{ project.name }}</h3>
+          <p class="featured__desc">{{ project.shortDescription }}</p>
+          <span class="featured__cta">{{ viewCase }} →</span>
+        </a>
+      </li>
+    }
+  </ul>
+</section>
+
+<section id="mas-proyectos" class="more" aria-labelledby="more-title">
+  <div class="featured__intro">
+    <h2 id="more-title">{{ moreTitle }}</h2>
+    <p>{{ moreLead }}</p>
+  </div>
+
+  <ul class="more__list">
+    @for (project of moreProjects; track project.slug) {
+      <li class="more__item">
+        <div class="more__copy">
+          <a class="more__name" [routerLink]="['/proyectos', project.slug]">{{ project.name }}</a>
+          <p>{{ project.shortDescription }}</p>
+        </div>
+        <div class="more__links">
+          @for (link of project.links; track link.url) {
+            <a
+              class="more__ext"
+              [href]="link.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ link.label }}</a
+            >
+          }
+          <a class="more__case" [routerLink]="['/proyectos', project.slug]">{{ viewCase }}</a>
+        </div>
+      </li>
+    }
+  </ul>
+</section>

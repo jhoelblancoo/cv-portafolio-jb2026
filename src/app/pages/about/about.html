@@ -1,0 +1,45 @@
+<section class="page about">
+  <header class="page__header">
+    <p class="page__brand">Jhoel Blanco</p>
+    <h1>{{ title }}</h1>
+  </header>
+
+  <div class="about__gallery" aria-labelledby="about-gallery-title">
+    <div class="about__gallery-intro">
+      <h2 id="about-gallery-title">{{ galleryTitle }}</h2>
+      <p>{{ galleryLead }}</p>
+    </div>
+    <ul class="about__photos">
+      @for (photo of photos; track photo.src) {
+        <li>
+          <img [src]="photo.src" [alt]="photo.alt" loading="lazy" width="787" height="1400" />
+        </li>
+      }
+    </ul>
+  </div>
+
+  <div class="about__grid">
+    <article>
+      <h2>{{ whoTitle }}</h2>
+      <p>{{ who }}</p>
+    </article>
+    <article>
+      <h2>{{ knowTitle }}</h2>
+      <p>{{ know }}</p>
+    </article>
+    <article>
+      <h2>{{ seekTitle }}</h2>
+      <p>{{ seek }}</p>
+    </article>
+    <article>
+      <h2>{{ eduTitle }}</h2>
+      <ul>
+        @for (item of eduItems; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+  </div>
+
+  <a class="btn btn--primary" routerLink="/contacto">{{ contactCta }}</a>
+</section>

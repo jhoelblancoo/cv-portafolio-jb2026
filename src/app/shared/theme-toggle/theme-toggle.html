@@ -1,0 +1,12 @@
+<button
+  type="button"
+  class="theme-toggle"
+  (click)="toggle()"
+  [attr.aria-label]="label()"
+>
+  @if (themeService.theme() === 'light') {
+    <span aria-hidden="true">◐</span>
+  } @else {
+    <span aria-hidden="true">◑</span>
+  }
+</button>

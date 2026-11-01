@@ -1,0 +1,59 @@
+.contact {
+  animation: page-in 0.55s ease both;
+}
+
+.contact__list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  max-width: 36rem;
+}
+
+.contact__link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.15rem 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+  transition: padding-left 0.25s ease, background 0.25s ease;
+
+  &:hover {
+    padding-left: 0.45rem;
+    background: linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--accent) 8%, transparent),
+      transparent 60%
+    );
+
+    .contact__value {
+      color: var(--accent-bright);
+    }
+  }
+}
+
+.contact__label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.contact__value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

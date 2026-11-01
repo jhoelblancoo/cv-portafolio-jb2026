@@ -1,0 +1,40 @@
+# Site: jhoelblanco.netlify.app
+# GitHub repo is portfolio-only (this folder = site root).
+
+[build]
+  command = "npm run build"
+  publish = "dist/portfolio/browser"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Required for @angular/ssr 22.x on Netlify
+[[plugins]]
+  package = "@netlify/angular-runtime"
+
+# Locale entrypoints from @angular/localize baseHref
+[[redirects]]
+  from = "/"
+  to = "/es/"
+  status = 302
+
+[[redirects]]
+  from = "/es"
+  to = "/es/"
+  status = 301
+
+[[redirects]]
+  from = "/en"
+  to = "/en/"
+  status = 301
+
+# SPA fallback within each locale (prerender covers Slice 1 routes; keep for client nav)
+[[redirects]]
+  from = "/es/*"
+  to = "/es/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/index.html"
+  status = 200
