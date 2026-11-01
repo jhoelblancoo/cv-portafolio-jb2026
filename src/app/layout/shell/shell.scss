@@ -37,9 +37,20 @@
 
 .brand-mark {
   grid-area: brand;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   text-decoration: none;
   color: var(--text);
   min-width: 0;
+}
+
+.brand-mark__logo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .brand-mark__name {
@@ -47,6 +58,9 @@
   font-weight: 600;
   font-size: 0.98rem;
   letter-spacing: -0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .site-nav {
@@ -113,6 +127,11 @@
     display: flex;
     padding: 0.9rem 1.25rem;
     gap: 1rem;
+  }
+
+  .brand-mark__logo {
+    width: 2.25rem;
+    height: 2.25rem;
   }
 
   .brand-mark__name {
