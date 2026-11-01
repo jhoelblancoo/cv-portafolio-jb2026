@@ -46,6 +46,9 @@ export class SeoService {
 
     this.title.setTitle(title);
     this.meta.updateTag({ name: 'description', content: description });
+    // Temporary until portfolio is 100% ready; flip to index,follow later.
+    this.meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
+    this.meta.updateTag({ name: 'googlebot', content: 'noindex, nofollow' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:site_name', content: this.siteName });
     this.meta.updateTag({ property: 'og:locale', content: this.locale === 'en' ? 'en_US' : 'es_VE' });

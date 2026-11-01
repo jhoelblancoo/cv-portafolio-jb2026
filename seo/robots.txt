@@ -1,4 +1,4 @@
+# Temporary: portfolio not ready for indexing. Flip back to Allow + Sitemap when ready.
 User-agent: *
-Allow: /
-
-Sitemap: https://jhoelblanco.netlify.app/sitemap.xml
+Disallow: /
+Allow: /google3804d3f31e87917d.html
