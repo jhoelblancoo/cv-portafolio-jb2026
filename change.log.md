@@ -1,5 +1,11 @@
 # portfolio — changelog
 
+## [0.0.4] - 2026-11-01 - Jblanco
+
+### CHANGE
+
+- Hero: `object-position` bajado (42% desktop / 38% mobile) para mostrar cara + título en `hero-graduation.jpg`
+
 ## [0.0.3] - 2026-11-01 - Jblanco
 
 ### CHANGE
